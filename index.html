@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大聪明</title>
+    <link rel="shortcut icon" href="images/logo.ico" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url('images/kirby.png');
+            background-size: 100%;
+        }
+        .box{
+            width: 600px;
+            padding: 10px;
+            /* background-color: black; */
+            display: flex;
+            position: absolute;
+            top: 120px;
+            left: 380px;
+        }
+        .txt{
+            height: 30px;
+            width: 500px;
+            padding: 8px 30px 8px 30px;
+            border-radius: 30px;
+            border: 2px solid pink;
+            outline: none;
+            /* position: absolute;
+            top: 120px;
+            left: 385px; */
+            color: plum;
+            background: #e7fcff;
+            font-size: 19px;
+        }
+        .txt:focus{
+            box-shadow: 0px 0px 30px 5px plum;
+            
+        }
+        .btn{
+            width: 45px;
+            height: 45px;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 15px;
+            color: white;
+            /* background-color: #e3a0e3; */
+            position: absolute;
+            top: 12.5px;
+            left: 524px;
+            border: none;
+            cursor: pointer;
+            background-image: url(images/kabi.jpg);
+            background-size: 300%;
+            background-position: 50.5px -29.5px;
+        }
+        .btn:hover{
+            transform: rotate(360deg);
+            transition: all 1.5s ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="https://www.baidu.com/s">
+            <input class="txt" name="wd" autocomplete="off" required type="text" placeholder="&nbsp;为什么不问问神奇卡比呢？">
+            <input class="btn" type="submit" src="images/kabi.jpg" value="">
+        </form>
+    </div>
+</body>
+</html>
