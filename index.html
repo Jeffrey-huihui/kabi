@@ -19,10 +19,11 @@
             width: 600px;
             padding: 10px;
             /* background-color: black; */
-            display: flex;
+            /* display: flex; */
             position: absolute;
-            top: 120px;
-            left: 380px;
+            top: 11.5vw;
+            left: 52%;
+            transform: translate(-50%,-50%);
         }
         .txt{
             height: 30px;
@@ -61,15 +62,19 @@
             background-position: 50.5px -29.5px;
         }
         .btn:hover{
-            transform: rotate(360deg);
-            transition: all 1.5s ;
+            animation:rotate .8s linear infinite;
+        }
+        @keyframes rotate{
+            100%{
+                transform:rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
     <div class="box">
         <form action="https://www.baidu.com/s">
-            <input class="txt" name="wd" autocomplete="off" required type="text" placeholder="&nbsp;为什么不问问神奇卡比呢？">
+            <input class="txt" name="wd" autocomplete="off" required type="text" placeholder="&nbsp;为什么不问问神奇卡比嘞？">
             <input class="btn" type="submit" src="images/kabi.jpg" value="">
         </form>
     </div>
