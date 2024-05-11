@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,47 @@
     <title>大聪明</title>
     <link rel="shortcut icon" href="images/logo.ico" />
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        body{
+
+        body {
+            width: 100vw;
+            height: 100vh;
             background-image: url('images/kirby.png');
             background-size: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .box{
+
+        .box {
             width: 600px;
             padding: 10px;
-            /* background-color: black; */
             display: flex;
-            position: absolute;
-            top: 180px;
-            left: 660px;
+            position: relative;
+            transform: translateY(-400%);
         }
-        .txt{
+
+        .txt {
             height: 30px;
             width: 500px;
             padding: 8px 30px 8px 30px;
             border-radius: 30px;
             border: 2px solid pink;
             outline: none;
-            /* position: absolute;
-            top: 120px;
-            left: 385px; */
             color: plum;
             background: #e7fcff;
             font-size: 19px;
         }
-        .txt:focus{
+
+        .txt:focus {
             box-shadow: 0px 0px 30px 5px plum;
-            
+
         }
-        .btn{
+
+        .btn {
             width: 45px;
             height: 45px;
             border-radius: 30px;
@@ -50,7 +56,6 @@
             line-height: 30px;
             font-size: 15px;
             color: white;
-            /* background-color: #e3a0e3; */
             position: absolute;
             top: 12.5px;
             left: 524px;
@@ -60,16 +65,19 @@
             background-size: 300%;
             background-position: 50.5px -29.5px;
         }
-        .btn:hover{
-            animation:rotate .8s linear infinite;
+
+        .btn:hover {
+            animation: rotate .8s linear infinite;
         }
-        @keyframes rotate{
-            100%{
-                transform:rotate(360deg);
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
             }
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <form action="https://www.baidu.com/s">
@@ -78,4 +86,5 @@
         </form>
     </div>
 </body>
+
 </html>
